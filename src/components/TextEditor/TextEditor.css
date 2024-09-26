@@ -1,0 +1,42 @@
+.makeAPostFooter {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.makeAPostFooterBtn {
+    width: fit-content;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.publishBtn {
+    margin-left: auto;
+    margin-right: 5px;
+    color: #fff;
+    background-color: #516df8;
+    border: none;
+}
+
+.publishBtn:hover {
+    background-color: #3757FF;
+}
+
+.previewBtn {
+    margin-left: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    color: rgba(0, 0, 0, 0.76);
+    background-color: #fff;
+}
+
+.previewBtn:hover {
+    color: #000;
+    background-color: #fff !important;
+    border: 1px solid #000;
+}

@@ -1,39 +1,46 @@
 .postAQuestion {
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .postAQuestionHeader{
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .postAQuestion .postAQuestionBtn {
     width: 87%;
-    height: 48px;
+    height: 40px;
     padding: 0 20px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #fff;
-    border-radius: 7px;
-    border: 1px solid #d1d1d18c;
+    background-color: rgba(252, 253, 253, 0.765);
+    /* background-color: rgba(227, 226, 226, 0.53); */
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: .2s;
 }
 
 .postAQuestionBtn:hover {
-    border: 1px solid #cccbcbdb;
+    /* border: 1px solid #cccbcbdb; */
+    background-color: rgba(227, 226, 226, 0.333);
 }
 
 .postAQuestionBtn p {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.5);
 }
 
 .postAQuestion .profileImage {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -42,7 +49,7 @@
 #postAQuestionBody {
     margin-top: 10px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 0;
     border: 1px solid #d1d1d18c;
 }
 
@@ -52,8 +59,54 @@
 
 .postAQuestionBodyTop {
     width: 100%;
-    padding: 20px 20px 0 20px;
+    height: 100%;
+    /* padding: 10px; */
     box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.postAQuestionNavBar {
+    margin: 0;
+    /* height: 50px; */
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    list-style: none;
+    border: none;
+}
+
+.postAQuestionNavBar li {
+    flex: 5;
+    /* height: 100%; */
+    height: 50px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    /* border-bottom: 2px solid #fff; */
+    cursor: pointer;
+}
+
+/* .postAQuestionNavBar li:hover {
+    text-decoration: underline;
+    background-color: rgba(227, 226, 226, 0.333);
+    border-bottom: 2px solid rgba(227, 226, 226, 0.194);
+} */
+
+.postAQuestionNavBar li.selectStyle {
+    border-bottom: 2px solid #516df8;
+}
+
+.postAQuestionNavBar li.notSelectStyle:hover {
+    background-color: rgba(227, 226, 226, 0.333);
+    border-bottom: 2px solid rgba(227, 226, 226, 0.194);
+}
+
+.postAQuestionNavBar li.notSelectStyle {
+    border-bottom: 2px solid #fff;
 }
 
 .postAQuestionBodyTop p {
@@ -65,29 +118,59 @@
 
 .postAQuestionBodyCenter {
     width: 100%;
-    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
 
-.postAQuestionBodyCenter textarea {
+.postAQuestionBodyCenter.viewStateStyling {
+    padding: 10px;
+    flex-direction: column;
+}
+
+.postAQuestionBodyCenter .postAQuestionInputWrapper {
     width: 100%;
     height: 100px;
-    border-color: #ccc;
-    border-radius: 5px;
+    padding: 10px;
+    /* border-color: #ccc;
+    border-radius: 5px; */
+}
+
+.postAQuestionInputWrapper textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    background: #FFFFFF;
+    /* border: 1px solid #9C9797; */
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .postAQuestionBodyBottom {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 15px 5px 15px 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    /* border-top: 1px solid #ccc; */
 }
 
 .posAQuestionBtn {
-    border: none;
     padding: 15px;
-    border-radius: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #516df8;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.posAQuestionBtn:hover {
+    background-color: #3757FF;
 }

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './Post.css'
-import { FaTimes } from 'react-icons/fa';
+import { GrClose } from "react-icons/gr"
 import { FiMessageSquare } from 'react-icons/fi';
 import { BiLike, BiBookmark } from 'react-icons/bi';
 import Comments from '../Comments/Comments';
-import { Users } from '../../dummyData';
+import { Users } from '../../db';
 
 const Post = ({ post, comments, onPostCommentsToggle }) => {
 
@@ -32,37 +32,39 @@ const Post = ({ post, comments, onPostCommentsToggle }) => {
 
     return (
         <div className='post'>
-            <div className='postHeader'>
-                <div className='postHeaderLeftSide'>
-                    <img alt="profile caption" src={process.env.PUBLIC_URL + Users.filter(u => u.id === post.userId)[0].profilePicture} className='userprofileImage'/>
-                    <div className='postInfo'>
-                        <p className='userName'>{Users.filter(u => u.id === post.userId)[0].username}</p>
-                        <p className='userTitle'>{Users.filter(u => u.id === post.userId)[0].jobRole},<span className='postTimeStamp'> {post.timeStamp}</span></p>
+            <div className='postMain'>
+                <div className='postHeader'>
+                    <div className='postHeaderLeftSide'>
+                        <img alt="profile caption" src={process.env.PUBLIC_URL + Users.filter(u => u.id === post.userId)[0].profilePicture} className='userprofileImage'/>
+                        <div className='postInfo'>
+                            <p><span className='userName'>{Users.filter(u => u.id === post.userId)[0].username}</span><span> · </span><span className='followBtn'>Follow</span></p>
+                            <p className='userTitle'><span>{Users.filter(u => u.id === post.userId)[0].jobRole}</span><span> · </span><span className='postTimeStamp'> {post.timeStamp}</span></p>
+                        </div>
+                    </div>
+                    <div className='postHeaderRightSide'>
+                        <GrClose className='closeIcon'/>
                     </div>
                 </div>
-                <div className='postHeaderRightSide'>
-                    <FaTimes className='closeIcon'/>
+                <div className='postBody'>
+                    <p className='postTitleText'>{post.title}</p>
+                    <p className='postBodyText'>{post?.body}</p>
+                    {/* <div className='postReadMore'><span className='postReadMoreBtn'>Read more</span></div> */}
                 </div>
             </div>
-            <div className='postBody'>
-                <p className='postTitleText'>{post.title}</p>
-                <p className='postBodyText'>{post?.body}</p>
-                {/* <div className='postReadMore'><span className='postReadMoreBtn'>Read more</span></div> */}
-            </div>
-            <div className='postFooter'>
+            <div className={`postFooter ${isDisplayed ? 'noBorderRadius' : '' }`}>
                 <div className='footerLeftSide'>
                     <div className='postCommentIconHolder' id={post.id} onClick={commentDisplayHandler}>
-                        <FiMessageSquare className='commentIcon' size='1.5em'/>
+                        <FiMessageSquare className='commentIcon' size='1.2rem'/>
                         <p>{post.comments.length}</p>
                     </div>
                     <div className='postLikes' onClick={likeHandler}>
-                        <BiLike className={`likeIcon ${isLiked ? 'liked' : ''}`} size='1.5em'/>
+                        <BiLike className={`likeIcon ${isLiked ? 'liked' : ''}`} size='1.2rem'/>
                         <p className={`likeCounter ${isLiked ? 'liked' : ''}`}>{likes}</p>
                     </div>
                 </div>
                 <div className='footerRightSide'>
                     <div className='postSave' onClick={savePost}>
-                        <BiBookmark className='saveIcon' size='1.5em'/>
+                        <BiBookmark className={`saveIcon ${isSaved ? 'saved' : ''}`} size='1.2rem'/>
                     </div>
                 </div>
             </div>

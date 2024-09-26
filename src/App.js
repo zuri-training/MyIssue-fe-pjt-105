@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { MantineProvider } from '@mantine/core';
 import './App.css'
 import RoutingComponent from './containers/routingComponent';
 import Header from './components/Header/Header';
@@ -17,6 +18,7 @@ function App() {
   }
 
   return (
+    <MantineProvider >
     <div className="App">
         <>
           {
@@ -30,6 +32,7 @@ function App() {
         </>
         <RoutingComponent setAuth={onAuth} isUserAuth={isAuth}/>
     </div>
+    </MantineProvider>
   );
 }
 

@@ -7,98 +7,104 @@
     justify-content: space-between;
     align-items: center;
 }
-  
+
 #formContainer {
-width: 100%;
-height: fit-content;
-padding: 0 10px 20px 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: #fff;
-border: 1px solid rgba(0, 0, 0, 0.139);
-/* border-radius: 3px; */
+    width: 100%;
+    padding: 20px 10px;
+    height: fit-content;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.139);
+}
+  
+#formContentBox {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
 }
 
 .welcomeTextContainer {
-width: 100%;
-padding: 5px 0;
-display: flex;
-justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .welcomeTextBig {
-font-size: 1rem;
-font-weight: 700;
-color: #4b4b5a;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4b4b5a;
 }
 
 .googleSignInBtn {
-margin-bottom: 15px;
-width: 80%;
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid #d1d1d1;
-border-radius: 3px;
-cursor: pointer;
-transition: .2s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s;
 }
 
 .googleSignInBtn p {
-margin: 3px 0;
-font-size: 0.7rem;
-font-weight: 500;
-line-height: 30px;
-color: #495057;
+    margin: 3px 0;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: #495057;
 }
 
 .googleLogo {
-margin-left: 5px;
-font-size: 1.3rem;
+    margin-left: 5px;
+    font-size: 1.3rem;
 }
 
 .googleSignInBtn:hover {
-background-color: rgba(55, 87, 255, 0.05);
-color: #eee;
-border: 1px solid #50545882;
+    background-color: rgba(55, 87, 255, 0.05);
+    color: #eee;
+    border: 1px solid #50545882;
 }
 
 .orTextWrapper {
-width: 65%;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .orTextWrapper hr {
-width: 35%;
+    width: 35%;
 }
 
 .orText {
-/* margin-bottom: 10px; */
-font-size: 0.7rem;
-font-weight: 600;
-color: #4b4b5a;
+    margin: 0 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #4b4b5a;
 }
 
 form {
-width: 80%;
-font-size: 0.7rem;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 0.7rem;
 }
 
 form .container {
-width: 100%;
-padding: 0;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .formItem {
-margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .formBox {
@@ -144,7 +150,7 @@ margin-bottom: 10px;
 }
 
 .formBoxInput {
-width: 92%;
+width: 100%;
 height: 35px;
 padding: 0 10px;
 background-color: rgb(240, 240, 240);
@@ -163,6 +169,17 @@ background-color: rgba(240, 240, 240, 0.393);
 
 .formBoxInput::placeholder {
     font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.formBoxInput::-webkit-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.formBoxInput:-ms-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
 }
 
 .formBtn {

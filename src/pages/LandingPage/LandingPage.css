@@ -1,11 +1,11 @@
 .landingPage {
-    margin-top: 90px;
+    margin-top: 60px;
     width: 100%;
     background-color: #fff;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1028px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -14,50 +14,55 @@
 /* Hero Section */
 .hero {
     width: 100%;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 
 .heroText {
     width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 72px;
+    line-height: 52px;
 }
 
 p {
-    font-size: 20px;
-    font-style: normal;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
     letter-spacing: 0.01em;
     text-align: left;
 }
 
 .heroText p {
     width: 85%;
-    margin: 20px 0;
+    margin: 15px 0 40px 0;
 }
 
-.heroText button {
+#heroBtn {
     margin: 20px 0;
-    padding: 15px 45px;
-    font-size: 25px;
-    border-radius: 5px;
+    padding: 15px 55px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 3px;
     border: none;
     outline: none;
     color: #fff;
-    background-color: #3757FF;
+    background-color: #516df8;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
-button:hover {
-    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.323);
+#heroBtn:hover {
+    background-color: #3757FF;
 }
 
 
@@ -88,11 +93,11 @@ button:hover {
 .descriptionByWords {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .descriptionByWords .subSection {
-    width: 32%;
+    width: 30%;
 }
 
 .descriptionByWords .effects {
@@ -181,7 +186,7 @@ h2 {
 /* About Us */
 .aboutUs {
     margin-top: 200px;
-    padding: 100px 0;
+    /* padding: 20px 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +194,7 @@ h2 {
 }
 
 .aboutUsContent {
-    margin: 50px 0 100px 0;
+    margin: 30px 0 70px 0;
     max-width: 800px;
     text-align: center;
 }
@@ -203,11 +208,12 @@ h2 {
 
 .aboutUsContentTitle h1 {
     margin: 20px 0;
-    color: #FB0909;
+    /* color: #FB0909; */
 }
 
 .aboutUsContentParagraph p{
-    margin: 0;
+    margin: 0 auto;
+    width: 65%;
     text-align: center;
 }
 
@@ -229,41 +235,8 @@ h2 {
     text-align: center;
 }
 
-.faqsQuestion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faqsQuestion p {
-    font-weight: 500;
-}
-
-.faqsAnswer {
-    padding-right: 30px;
-}
-
-.faqsAnswer p {
-    font-size: 18px;
-    color: #000;
-}
-
-.faqsAnswer.closed {
-    opacity: 0;
-    max-height: 0px;
-    height: 100%;
-    visibility: hidden;
-    pointer-events: none;
-    margin-bottom: 0px;
-}
-
-.faqsAnswer.open {
-    opacity: 1;
-    max-height: 160px;
-    height: 100%;
-    visibility: visible;
-    pointer-events: all;
-    margin-bottom: 32px;
+.faqsQuestionsAndAnswers {
+    margin-top: 30px;
 }
 
 /* Contact Us */
@@ -274,7 +247,6 @@ h2 {
     justify-content: center;
     align-items: center;
     background: rgba(55, 87, 255, 0.2);
-    border-radius: 8px;
 }
 
 .contactUsContent {
@@ -285,40 +257,71 @@ h2 {
     margin: 10px;
 }
 
+.contactUsContent p {
+    text-align: center;
+    margin: 15px auto;
+    /* width: 30%; */
+}
+
 .contactUsForm {
-    width: 610px;
-    height: 570px;
-    padding: 70px 30px 20px 30px;
+    margin-top: 10px;
+    width: 53%;
+    height: fit-content;
+    padding: 50px 20px;
     display: inline-block;
     background: #FFFFFF;
-    border-radius: 8px;
-    font-size: 20px;
+    border-radius: 3px;
+    font-size: 0.9rem;
     line-height: 30px;
 }
 
 .contactUsForm input[type=text],
-.contactUsForm input[type=email],
-.contactUsForm textarea {
-    margin: 20px 0;
-    width: 70%;
-    padding: 25px;
+.contactUsForm input[type=email] {
+    margin: 10px 0;
+    width: 85%;
+    height: 40px;
+    padding: 10px;
     background: #FFFFFF;
-    border: 0.5px solid #9C9797;
+    border: 1px solid #9C9797;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
 }
 
-.contactUsForm input {
-    height: 74px;
-}
 
 .contactUsForm textarea {
-    height: 163px;
+    min-height: 163px;
+    width: 274px !important;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border: 1px solid #9C9797;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.contactUsForm input::placeholder,
+.contactUsForm textarea::placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.contactUsForm input::-webkit-input-placeholder,
+.contactUsForm textarea::-webkit-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
+}
+
+.contactUsForm input:-ms-input-placeholder,
+.contactUsForm textarea:-ms-input-placeholder {
+    font-size: 0.7rem;
+    color: rgb(159, 159, 159);
 }
 
 .submitBtn {
-    margin: 30px auto;
-    width: 70%;
+    margin: 10px 25px 0 auto;
+    /* width: %; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -327,18 +330,19 @@ h2 {
 
 .submitBtn input[type=submit] {
     padding: 15px 45px;
-    font-size: 20px;
-    border-radius: 8px;
+    font-size: 0.9rem;
+    border-radius: 3px;
     border: none;
     outline: none;
     color: #fff;
-    background-color: #3757FF;
+    background-color: #516df8;
     cursor: pointer;
     transition: ease-in-out 0.3s all;
 }
 
 input[type=submit]:hover {
-    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.302);
+    /* box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.302); */
+    background-color: #3757FF;
 }
 
 input:focus,

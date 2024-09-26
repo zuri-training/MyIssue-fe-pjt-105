@@ -4,14 +4,14 @@
     /* padding-top:  10px; */
     background-color: #fff;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #ccc;
 }
 
 .topPicksTitleText {
     margin: 0;
-    padding: 5px 10px;
-    font-size: 0.88rem;
+    padding: 10px 10px;
+    font-size: 0.8rem;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.85);
     border-bottom: 0.5px solid #ccc;
@@ -30,7 +30,7 @@
     border-bottom: 0.5px solid #ccc;
     
     /* margin-bottom: 10px; */
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     line-height: 20px;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.734);
@@ -40,4 +40,5 @@
 
 .topPicksListItem:hover {
     color: #000;
+    background-color: rgba(227, 226, 226, 0.734);
 }

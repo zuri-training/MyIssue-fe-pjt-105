@@ -1,18 +1,33 @@
 .sideBar {
-    /* margin-top: 30px; */
-    /* flex: 1.7; */
-    width: 100%;
-    /* min-height: calc(100vh - 70px); */
+    width: 98%;
     height: fit-content;
-    /* padding: 10px 0; */
-    /* background-color: #fff; */
     
 }
 
 .mainSideBarOptions {
-    border-radius: 6px;
+    border-radius: 3px;
     color: rgba(0, 0, 0, 0.734);
+    /* border: 1px solid #ccc; */
+}
+
+.mainSideBarOptions li {
     border: 1px solid #ccc;
+}
+
+.mainSideBarOptions .home {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.mainSideBarOptions .yourCommunities {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.yourCommunities.onDropdown,
+.yourTopics.onDropdown {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 0
 }
 
 .sidebarIcons {
@@ -22,7 +37,8 @@
 .sideBar p {
     margin: 0;
     padding: 0;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
 
@@ -30,20 +46,21 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 .sideBar ul li {
     padding: 5px 10px;
     cursor: pointer;
     /* border-radius: 5px; */
-    border-bottom: 0.5px solid #ccc;
+    /* border-bottom: 0.5px solid #ccc; */
     transition: ease-in-out 0.3s all;
 }
 
 .sideBar ul li:hover {
     /* color: #3757FF; */
-    background-color: rgba(55, 88, 255, 0.096);
+    /* background-color: rgba(55, 88, 255, 0.096); */
+    background-color: rgba(205, 205, 205, 0.726);
 }
 
 .sideBar ul li p {
@@ -59,9 +76,19 @@
     margin-left: auto;
 }
 
-.yourCommunityList,
-.yourTopicsList {
-    margin-left: 20px;
+#yourCommunityList,
+#yourTopicsList {
+    margin-left: 2px;
+    width: 100%;
+    
+}
+
+#yourCommunityList li,
+#yourTopicsList li {
+    /* border-top: none; */
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .yourTopicsList.noDisplay,
@@ -69,9 +96,16 @@
     display: none;
 }
 
+#yourCommunityList li,
+#yourTopicsList li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
 .yourTopicsList li p,
 .yourCommunityList li p {
     font-size: 0.65rem;
+    font-weight: 400;
     line-height: 15px;
 }
 
@@ -79,6 +113,6 @@
 .sideBarTopicsImage {
     width: 20px;
     height: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     object-fit: cover;
 }

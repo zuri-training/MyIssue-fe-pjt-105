@@ -1,4 +1,4 @@
-export const Users = [
+const Users = [
     {
         id: 1,
         profilePicture: '/assets/userProfileImage1.png',
@@ -398,3 +398,34 @@ export const Topics = [
         description: 'We talk about how the Zuri Training has impacted our life and choices since the Training.',
     },
 ];
+
+
+const FAQs = [
+    {
+        id: '1',
+        question: 'I am totally new to this community thing, How does the whole thing work?',
+        answer: 'Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need.'
+    },
+    {
+        id: '2',
+        question: 'Do you provide support  to individuals and community?',
+        answer: 'Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need.'
+    },
+    {
+        id: '3',
+        question: 'Do you provide support  to individuals and community?',
+        answer: 'Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need.'
+    },
+    {
+        id: '4',
+        question: 'Who can I talk to if I have a question, complaint or need technical support?',
+        answer: 'Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need.'
+    },
+    {
+        id: '5',
+        question: 'Who can use the Creer platform?',
+        answer: 'Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need.'
+    }
+]
+
+export { Users, FAQs };

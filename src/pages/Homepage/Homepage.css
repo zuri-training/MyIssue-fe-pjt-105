@@ -9,7 +9,7 @@
     transform: translateZ(0);
 }
 
-main {
+.homepage main {
     position: relative;
     margin-top: auto;
     width: 100%;
@@ -21,18 +21,18 @@ main {
 }
 
 .leftViewContainer {
-    flex: 1.7;
+    flex: 1.6;
     padding-top: 30px;
 }
 
 .feedViewContainer {
-    flex: 4.7;
+    flex: 4.6;
     /* margin-left: auto; */
     padding: 30px 30px 0 30px;
 }
 
 .rightViewContainer {
-    flex: 2.1;
+    flex: 2.5;
     padding-top: 30px;
 }
 
