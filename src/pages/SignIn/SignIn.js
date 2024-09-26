@@ -1,13 +1,12 @@
+import AuthLayout from "../../components/AuthLayout/AuthLayout";
 import Form from "../../components/Form/Form";
-import "./SignIn.css";
-
 
 const Login = ({ setAuth }) => {
-    return (
-        <div className='login'>
-            <Form setAuth={setAuth} formType={'signin'}/>
-        </div>
-    )
-}
+  return (
+    <AuthLayout>
+      <Form setAuth={setAuth} formType={"signin"} />
+    </AuthLayout>
+  );
+};
 
-export default Login
+export default Login;

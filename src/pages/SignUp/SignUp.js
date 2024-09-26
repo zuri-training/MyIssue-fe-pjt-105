@@ -1,13 +1,12 @@
-import './SignUp.css';
-import Form from '../../components/Form/Form';
+import Form from "../../components/Form/Form";
+import AuthLayout from "../../components/AuthLayout/AuthLayout";
 
- function SignUp({ setAuth }) {
+function SignUp({ setAuth }) {
   return (
-    <div className='signup'>
-        <Form setAuth={setAuth} formType={'signup'} />
-    </div>
+    <AuthLayout>
+      <Form setAuth={setAuth} formType={"signup"} />
+    </AuthLayout>
   );
 }
-
 
 export default SignUp;

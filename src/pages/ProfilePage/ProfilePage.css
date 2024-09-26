@@ -3,16 +3,18 @@
     display: flex;
     justify-content: center;
     background-color: #fff;
+    overflow-x: hidden !important;
 }
 
 .profilePageContainer {
-    margin-top: 60px;
-    max-width: 1000px;
-    height: calc(100vh - 66px);
+    margin: 60px auto 0 auto;
+    width: 1028px;
+    max-width: 1028px;
+    min-height: calc(100vh - 60px);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     
 }
 
@@ -23,12 +25,12 @@
 
 .profilePageBodyLeft {
     margin-right: 30px;
-    flex: 6;
+    flex: 6.7;
 }
 
 .profilePageBodyRight {
     margin-left: 30px;
-    flex: 2.5;
+    flex: 3;
 }
 
 .profilePageBodyTop {
@@ -80,43 +82,8 @@
     padding: 20px;
 }
 
-.profilePageStatsHolder {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.profilePageFollowersHolder,
-.profilePageFollowingHolder,
-.profilePagePostsHolder {
-    width: 100%;
-    padding: 10px 15px;
-    border-bottom: 1px solid #ccc;
-}
-
-.profilePageFollowersHolder:hover,
-.profilePageFollowingHolder:hover,
-.profilePagePostsHolder:hover {
-    background-color: rgba(233, 233, 233, 0.713);
-}
-
-.profilePageStatsText {
-    font-size: 15px;
-    font-weight: 500;
-    color: rgb(151, 150, 150);
-    cursor: pointer;
-}
-
-.postsBody.noDisplay,
-.followersBody.noDisplay,
-.followingBody.noDisplay {
-    display: none;
-}
-
-.profilePageStatsText:hover {
-    color: #000;
+.profilePageBodyCenterMain {
+    max-width: 100%;
 }
 
 
@@ -144,7 +111,9 @@
 }
 
 .editIcon {
+    margin-right: 5px;
     padding: 5px;
+    font-size: 1.7rem;
     border-radius: 50%;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.5);
@@ -195,13 +164,15 @@
 }
 
 .createACommunityIcon {
-    padding: 10px;
+    padding: 5px;
+    font-size: 1.7rem;
     border-radius: 50%;
     color: #fff;
     background-color: rgb(84, 139, 211);
 }
 
 .createACommunityText {
-    font-size: 14px;
+    /* margin-top: 10px; */
+    font-size: 0.7rem;
     font-weight: 300;
 }

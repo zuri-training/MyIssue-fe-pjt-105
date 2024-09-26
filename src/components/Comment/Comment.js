@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Comment.css';
 import { BiLike } from 'react-icons/bi';
 import { RiReplyLine } from 'react-icons/ri';
-import { Users } from '../../dummyData';
+import { Users } from '../../db';
 
 const Comment = ({ comment }) => {
 
@@ -28,7 +28,7 @@ const Comment = ({ comment }) => {
                     <img alt="user" src={process.env.PUBLIC_URL + Users.filter(u => u.id === comment.userId)[0].profilePicture} className='userprofileImage'/>
                     <div className='commentInfo'>
                         <p className='userName'>{Users.filter(u => u.id === comment.userId)[0].username}</p>
-                        <p className='userTitle'>{Users.filter(u => u.id === comment.userId)[0].jobRole}</p>
+                        <p className='userTitle'>{Users.filter(u => u.id === comment.userId)[0].jobRole}<span> · </span><span className='postTimeStamp'>5 days ago</span></p>
                     </div>
                 </div>
             </div>
@@ -38,11 +38,11 @@ const Comment = ({ comment }) => {
             <div className='commentFooter'>
                 <div className='commentfooterLeftSide'>
                     <div className='commentLikes' onClick={likeHandler}>
-                        <BiLike className={`likeIcon ${isLiked ? 'liked' : ''}`} size='1.5em'/>
+                        <BiLike className={`likeIcon ${isLiked ? 'liked' : ''}`} size='1.2rem'/>
                         <p className={`likeCounter ${isLiked ? 'liked' : ''}`}>{likes}</p>
                     </div>
                     <div className='commentReply' onClick={commentDisplayHandler}>
-                        <RiReplyLine className='replyIcon' size='1.5em'/>
+                        <RiReplyLine className='replyIcon' size='1.2rem'/>
                         <p>Reply</p>
                     </div>
                 </div>

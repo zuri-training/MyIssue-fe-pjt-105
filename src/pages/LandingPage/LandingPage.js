@@ -1,7 +1,7 @@
 import './LandingPage.css';
-import { GrAdd } from 'react-icons/gr';
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
+import Faqs from '../../components/Faqs/Faqs';
 
 const LandingPage = () => {
 
@@ -13,9 +13,9 @@ const LandingPage = () => {
             {/* Hero */}
             <section className='hero'>
               <div className='heroText'>
-                <h1>Share problems, Discover solutions, Explore the community.</h1>
+                <h1>Share problems,<br></br> Discover solutions,<br></br> Explore the community.</h1>
                 <p>Share your project ideas with developers and non-developers all around the world.</p>
-                <button><Link to='/signup' style={{color:'#fff'}}>Get Started</Link></button>
+                <Link to='/signup' id='heroBtn' className='heroBtn'>Get Started</Link>
               </div>
               <div className='heroImage'>
                 <img src={process.env.PUBLIC_URL + '/assets/hero-image.png'} alt='illustration' />
@@ -111,56 +111,7 @@ const LandingPage = () => {
                   <h1>FAQs</h1>
                 </div>
                 <div className='faqsQuestionsAndAnswers'>
-                  <div className='faqsQuestionAndAnswer'>
-                    <div className='faqsQuestion'>
-                      <p>I am totally new to this “website thing”. How does the whole thing work?</p>
-                      <GrAdd className='addBtn'/>
-                    </div>
-                    <div className='faqsAnswer closed'>
-                      <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
-                    </div>
-                    <hr/>
-                  </div>
-                  <div className='faqsQuestionAndAnswer'>
-                    <div className='faqsQuestion'>
-                      <p>Do you provide support  to individuals and community?</p>
-                      <GrAdd className='addBtn'/>
-                    </div>
-                    <div className='faqsAnswer closed'>
-                      <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
-                    </div>
-                    <hr/>
-                  </div>
-                  <div className='faqsQuestionAndAnswer'>
-                    <div className='faqsQuestion'>
-                      <p>Who can I talk to if I have a question, complaint or need technical support?</p>
-                      <GrAdd className='addBtn'/>
-                    </div>
-                    <div className='faqsAnswer closed'>
-                      <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
-                    </div>
-                    <hr/>
-                  </div>
-                  <div className='faqsQuestionAndAnswer'>
-                    <div className='faqsQuestion'>
-                      <p>Who can use the Creer platform?</p>
-                      <GrAdd className='addBtn'/>
-                    </div>
-                    <div className='faqsAnswer closed'>
-                      <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
-                    </div>
-                    <hr/>
-                  </div>
-                  <div className='faqsQuestionAndAnswer'>
-                    <div className='faqsQuestion'>
-                      <p>What kinds of posts are allowed on Creer?</p>
-                      <GrAdd className='addBtn'/>
-                    </div>
-                    <div className='faqsAnswer closed'>
-                      <p>Yes. we care about you and the develpoment you make, please feel free to give us a call for whatever support you need</p>
-                    </div>
-                    <hr/>
-                  </div>
+                  <Faqs />
                 </div>
               </div>
             </section>

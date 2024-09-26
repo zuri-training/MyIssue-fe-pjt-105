@@ -1,0 +1,164 @@
+.landingPageHeader {
+    width: 100%;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinksToggleBtn {
+    display: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.navItems {
+    width: 57%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navItems ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.navItems ul li {
+    padding: 0 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s all;
+}
+
+.navItems ul li:hover {
+    color: #3757FF;
+}
+
+.headerBtn {
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: ease-in-out 0.3s all;
+}
+
+#loginBtn {
+    padding: 9px 22px;
+    color: #516df8;
+    border: 0.5px solid #516df8;
+}
+
+#loginBtn:hover {
+    color: #3757FF;
+    border: 0.5px solid #3757FF;
+}
+
+#signUpBtn {
+    padding: 10px 35px;
+    color: #fff;
+    background-color: #516df8;
+}
+
+#signUpBtn:hover {
+    color: #fff;
+    background-color: #3757FF;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+    .navItems {
+        width: 68%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .headerLeft {
+        width: 100%;
+    }
+
+    .navLinksToggleBtn {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .navItems {
+        display: none;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .navItems.display {
+        display: flex;
+    }
+
+    .landingPageHeader {
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navItems ul {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .navItems ul li {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerBtn {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #signUpBtn {
+        width: 100%;
+        padding: 10px 35px;
+        color: #fff;
+        background-color: #516df8;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .headerBtn {
+        font-size: 0.6rem;
+    }
+
+    .navItems ul {
+        font-size: 0.6rem;
+    }
+}

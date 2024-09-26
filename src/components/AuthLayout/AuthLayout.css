@@ -1,0 +1,15 @@
+#layoutWrapper {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  @media (max-width: 640px) {
+    #layoutWrapper {
+      background-color: rgb(255, 255, 255);
+    }
+  }

@@ -1,0 +1,154 @@
+/* .inAppHeaderWrapper {
+    padding: 10px;
+} */
+
+.inAppHeaderWrapper, .mobileSearchView, .topHeaderWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .mobileSearchView, .topHeaderWrapper {
+    background: #B70404;
+} */
+
+.mobileSearchView {
+    padding-right: 10px;
+}
+
+.searchButton, .backButton {
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #757575;
+    background: transparent;
+}
+
+.searchButton {
+    margin-right: 10px;
+}
+
+.backButton {
+    padding: 0;
+}
+
+.backButtonIcon {
+    margin: none;
+}
+
+.searchInputWrapper {
+    width: 92%;
+}
+
+
+.searchButton {
+    display: none;
+}
+
+.normalInAppWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerCenter {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerCenter .searchBox {
+    width: 58%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgba(253, 253, 253, 0.8);
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.headerCenter .searchBox input[type='text'] {
+    width: 90%;
+    height: 90%;
+    background: transparent;
+    border: none;
+}
+
+.headerRight {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.notification {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.notification span {
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -2px;
+    right: 0;
+}
+
+
+
+.headerRight .profileImage {
+    margin-left: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profileImage img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+    .normalInAppWrapper {
+        flex-direction: column;
+    }
+
+    .topHeaderWrapper {
+        padding: 10px 20px;
+    }
+
+    .searchButton {
+        display: flex;
+    }
+
+    .headerRight {
+        display: none;
+    }
+    
+    .headerCenter {
+        display: none;
+    }
+}
