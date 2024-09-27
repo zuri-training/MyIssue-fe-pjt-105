@@ -1,0 +1,185 @@
+.communityPage {
+    max-width: 900px;
+    min-height: max-content;
+    margin: 0 auto;
+    padding: 15px 0;
+    /* background-color: #000; */
+}
+
+.communityHeader  p {
+    margin: 0;
+    padding: 0;
+}
+
+.communityHeader {
+    position: relative;
+    height: 350px;
+}
+
+.communityHeaderGradientLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.611);
+}
+
+.communityHeaderBackgroundImage {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.communityHeaderBiggerImageHolder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    
+}
+
+.communityHeaderBiggerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.communityHeaderSmallerImageHolder {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    height: 120px;
+    width: 120px;
+    z-index: 5;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.communityHeaderSmallerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.communityHeaderDetails {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.commmunityHeaderDetailsLeft,
+.commmunityHeaderDetailRight {
+    flex: 5;
+}
+
+.commmunityHeaderDetailsLeft p {
+    color: #fff;
+}
+
+.communityHeaderDetailsNameText {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.communityHeaderDetailsDescriptionText {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.communityHeaderDetailsFollowersText {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.commmunityHeaderDetailRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.commmunityHeaderFollowBtn,
+.commmunityHeaderInviteBtn {
+    margin-right: 20px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+
+.communityBody {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.communityBodyLeft {
+    /* margin-right: 20px; */
+    flex: 5.5;
+    padding: 0 30px 0 0;
+}
+
+.communityBodyLeftTop {
+    border-bottom: 1px solid #ccc;
+}
+
+.communityBodyLeftNavBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    border: none;
+    cursor: pointer;
+}
+
+.communityBodyLeftNavBar li {
+    margin: 0;
+    height: 100%;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    
+}
+
+.communityBodyLeftNavBar li.selectStyle {
+    border-bottom: 3px solid #516df8;
+    border-bottom-left-radius: -5px;
+    border-bottom-right-radius: -5px;
+}
+
+.communityBodyLeftNavBar li.notSelectStyle:hover {
+    background-color: rgba(227, 226, 226, 0.333);
+    border-bottom: 3px solid rgba(227, 226, 226, 0.194);
+}
+
+.communityBodyLeftNavBar li.notSelectStyle {
+    border-bottom: 3px solid rgba(227, 226, 226, 0.194);
+}
+
+.communityBodyLeftMain {
+    margin: 12px 0;
+}
+
+.communityBodyRight {
+    flex: 3.2;
+}

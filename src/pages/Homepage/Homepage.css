@@ -9,7 +9,7 @@
     transform: translateZ(0);
 }
 
-main {
+.homepage main {
     position: relative;
     margin-top: auto;
     width: 100%;
@@ -21,18 +21,18 @@ main {
 }
 
 .leftViewContainer {
-    flex: 1.7;
+    flex: 1.6;
     padding-top: 30px;
 }
 
 .feedViewContainer {
-    flex: 4.7;
+    flex: 4.6;
     /* margin-left: auto; */
-    padding: 30px 30px 0 30px;
+    padding: 30px 25px 0 25px;
 }
 
 .rightViewContainer {
-    flex: 2.1;
+    flex: 2.5;
     padding-top: 30px;
 }
 
@@ -46,4 +46,30 @@ main {
 
 .viewsOverflowStyle::-webkit-scrollbar {
     display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .leftViewContainer {
+        display: none;
+    }
+    
+    .feedViewContainer {
+        flex: 10;
+        /* margin-left: auto; */
+        padding: 0px 60px 0 60px;
+    }
+    
+    .rightViewContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .feedViewContainer {
+        padding: 10px 0 0 0;
+    }
 }

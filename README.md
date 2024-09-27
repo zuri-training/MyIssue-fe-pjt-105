@@ -39,15 +39,15 @@ This project is centered on enabling people within the tech ecosystem to share/g
 <!-- PROJECT LINKS -->
 ### Project Links
 
-- Project Documentation - https://docs.google.com/document/d/1lgoH_PtHqetFhnvqx-dK8v78pIeqiglOnmbXwsw72Eg/edit
+<!-- - Project Documentation - https://docs.google.com/document/d/1lgoH_PtHqetFhnvqx-dK8v78pIeqiglOnmbXwsw72Eg/edit -->
 <!-- - Design Link - https://www.figma.com/file/SR7xS1DbOfIOwpqa1MpDHv/?node-id=0%3A1 -->
 - Frontend Github Repo - https://github.com/zuri-training/creer-fe-pjt-105
-- Backend Github Repo - https://github.com/zuri-training/MyIssue-be-pjt-105
+<!-- - Backend Github Repo - https://github.com/zuri-training/MyIssue-be-pjt-105 -->
 
 
 
 <!-- INSTALLATION -->
-## Installation
+## Run Locally
 
 - After cloning the files, Navigate into the project folder (For you to have the file locally on your machine you will have to follow the steps below.)
   ```javascript
@@ -85,11 +85,11 @@ This project is centered on enabling people within the tech ecosystem to share/g
 
 This project is only possible thanks to the wonderful people that carried it from just an idea all the way to a live product that is making life a lot easier.
 
-Below is a list of these wonderful people;
+Below is a list of the wonderful people;
 
 - [Imiebo Godson](https://github.com/ImieboGodson) - Frontend Developer
 - [Adekola Mariam](https://github.com/Marrockx) - Frontend Developer
 - [Okoroafor Daniel](https://github.com/OkoroaforDaniel) -Frontend Developer
-- [Praise Odoh](https://github.com/odohpraise) - Frontend Developer
+- [Praise Odoh](https://github.com/odohpraise) - Frontend Developer 
 
 

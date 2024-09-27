@@ -2,17 +2,15 @@
     margin-bottom: 10px;
     padding: 5px 10px;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
-    border-radius: 6px;
+    border-radius: 3px;
     color: rgba(0, 0, 0, 0.734);
     background-color: rgba(227, 226, 226, 0.734);
-    /* border: 1px solid #ccc; */
     cursor: pointer;
 }
 
 .createASpace:hover {
-    background-color: rgba(55, 88, 255, 0.096);
+    background-color: rgba(227, 226, 226, 1);
 }
 
 .createASpaceIcon {
@@ -25,5 +23,7 @@
 .createASpace p {
     margin: 0;
     padding: 0;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #636466;
 }

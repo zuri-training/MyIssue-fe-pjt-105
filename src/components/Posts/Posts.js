@@ -1,6 +1,6 @@
 import Post from '../Post/Post';
 import './Posts.css';
-import { posts } from '../../dummyData';
+import { posts } from '../../db';
 
 const Posts = () => {
 

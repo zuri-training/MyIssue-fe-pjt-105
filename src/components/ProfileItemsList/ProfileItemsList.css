@@ -1,0 +1,20 @@
+.profile-items-list {
+    width: 100%;
+    list-style: none;
+    border-top: 0.5px solid #ccc;
+}
+
+.profile-items-list > li {
+    padding: 12px 0;
+    border-bottom: 0.5px solid #ccc;
+    /* font-size: 0.7rem;
+    line-height: 20px; */
+    cursor: pointer;
+    /* color: rgba(0, 0, 0, 0.79); */
+    transition: ease-in-out 0.3s all;
+}
+
+.profile-items-list > .space-item:hover {
+    /* color: #000; */
+    background-color: rgba(227, 226, 226, 0.395);
+}
